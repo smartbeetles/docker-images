@@ -1,5 +1,5 @@
 ARG PHP_VERSION=
-FROM docker.io/smartbeetles/php-fpm:${PHP_VERSION}
+FROM docker.io/smartbeetles/php/php-fpm:${PHP_VERSION}
 USER root
 
 RUN curl -o - "http://packages.blackfire.io/fedora/blackfire.repo" \
