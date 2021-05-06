@@ -4,9 +4,9 @@ USER root
 
 RUN curl -o - "http://packages.blackfire.io/fedora/blackfire.repo" \
     | sudo tee /etc/yum.repos.d/blackfire.repo \
-    && dnf install -y blackfire-php \
-    && dnf clean all \
-    && rm -rf /var/cache/dnf
+    && yum install -y blackfire-php \
+    && yum clean all \
+    && rm -rf /var/cache/yum
 
 COPY blackfire/etc/php.d/*.ini /etc/php.d/
 
