@@ -1,6 +1,6 @@
 ARG PHP_VERSION=
 ARG PHP_VARIANT="fpm-loaders"
-FROM smartbeetles/php/php:${PHP_VERSION}-${PHP_VARIANT}
+FROM smartbeetles/php:${PHP_VERSION}-${PHP_VARIANT}
 
 # Clear undesired settings from base fpm images
 ENV COMPOSER_ALLOW_SUPERUSER=
